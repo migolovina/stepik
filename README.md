@@ -11,7 +11,8 @@
 | --- | --- |
 | Мой канал | [[Rutube](https://rutube.ru/plst/909045/)] |
 | Мой канал | [[plvideo](https://plvideo.ru/playlist?list=SuymwXRNSHg3)] |
-| Meta | [![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3509134.svg)](https://doi.org/10.5281/zenodo.3509134) [![License - BSD 3-Clause](https://img.shields.io/pypi/l/pandas.svg)](https://github.com/pandas-dev/pandas/blob/main/LICENSE) [![Slack](https://img.shields.io/badge/join_Slack-information-brightgreen.svg?logo=slack)](https://pandas.pydata.org/docs/dev/development/community.html?highlight=slack#community-slack) |
+| Прохождение на github | [![GitHub](https://github.com/migolovina/study_2024-2025_os_intro/tree/master/stepik)]|
+| Ссылка на сертификат | [![Stepik](https://stepik.org/cert/2791854)]|
 
 
 ## What is it?
