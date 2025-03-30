@@ -15,177 +15,476 @@
 | Ссылка на сертификат | [[Stepik](https://stepik.org/cert/2791854)]|
 
 
-## What is it?
+## Что это?
 
-**pandas** is a Python package that provides fast, flexible, and expressive data
-structures designed to make working with "relational" or "labeled" data both
-easy and intuitive. It aims to be the fundamental high-level building block for
-doing practical, **real world** data analysis in Python. Additionally, it has
-the broader goal of becoming **the most powerful and flexible open source data
-analysis / manipulation tool available in any language**. It is already well on
-its way towards this goal.
+Моё подробное прохождение курса "Введение в Linux"
 
-## Table of Contents
+## Цель
 
-- [Main Features](#main-features)
-- [Where to get it](#where-to-get-it)
-- [Dependencies](#dependencies)
-- [Installation from sources](#installation-from-sources)
-- [License](#license)
-- [Documentation](#documentation)
-- [Background](#background)
-- [Getting Help](#getting-help)
-- [Discussion and Development](#discussion-and-development)
-- [Contributing to pandas](#contributing-to-pandas)
+Познакомятся с операционной системой Linux и её базовыми возможностями. 
 
-## Main Features
-Here are just a few of the things that pandas does well:
+## Задания
 
-  - Easy handling of [**missing data**][missing-data] (represented as
-    `NaN`, `NA`, or `NaT`) in floating point as well as non-floating point data
-  - Size mutability: columns can be [**inserted and
-    deleted**][insertion-deletion] from DataFrame and higher dimensional
-    objects
-  - Automatic and explicit [**data alignment**][alignment]: objects can
-    be explicitly aligned to a set of labels, or the user can simply
-    ignore the labels and let `Series`, `DataFrame`, etc. automatically
-    align the data for you in computations
-  - Powerful, flexible [**group by**][groupby] functionality to perform
-    split-apply-combine operations on data sets, for both aggregating
-    and transforming data
-  - Make it [**easy to convert**][conversion] ragged,
-    differently-indexed data in other Python and NumPy data structures
-    into DataFrame objects
-  - Intelligent label-based [**slicing**][slicing], [**fancy
-    indexing**][fancy-indexing], and [**subsetting**][subsetting] of
-    large data sets
-  - Intuitive [**merging**][merging] and [**joining**][joining] data
-    sets
-  - Flexible [**reshaping**][reshape] and [**pivoting**][pivot-table] of
-    data sets
-  - [**Hierarchical**][mi] labeling of axes (possible to have multiple
-    labels per tick)
-  - Robust IO tools for loading data from [**flat files**][flat-files]
-    (CSV and delimited), [**Excel files**][excel], [**databases**][db],
-    and saving/loading data from the ultrafast [**HDF5 format**][hdfstore]
-  - [**Time series**][timeseries]-specific functionality: date range
-    generation and frequency conversion, moving window statistics,
-    date shifting and lagging
+1. Введение
+2. Общая информация о курсе
+3. Как установить Linux
+4. Осваиваем Linux
+5. Terminal: основы
+6. Запуск исполняемых файлов
+7. Ввод / вывод
+8. Скачивание файлов из интернета
+9. Работа с архивами
+10. Поиск файлов и слов в файлах
+11. Работа на сервере
+12. Знакомство с сервером
+13. Обмен файлами
+14. Запуск приложений
+15. Контроль запускаемых программ
+16. Многопоточные приложения
+17. Менеджер терминалов tmux
+18. Как установить Linux: расширенное руководство
+19. Продвинутые темы
+20. Текстовый редактор vim
+21. Скрипты на bash: основы
+22. Скрипты на bash: ветвления и циклы
+23. Скрипты на bash: разное
+24. Продвинутый поиск и редактирование
+25. Строим графики в gnuplot
+26. Разное
+
+## Этап 1
+
+В первом этапе внешнего курса мне нужно было: рассмотреть общую информацию, рассмотреть способы установки Linux, освоить Linux, запустить Terminal, а также изучить несколько базовых команд для работы в нём, рассмотреть запуск исполняемых файлов, рассмотреть ввод/вывод, рассмотреть скачивание файлов из интернета, рассмотреть работу с архивами, рассмотреть способы поиска файлов и ответить на тестовые вопросы.
+
+**После просмотра общей информации, мне нужно было ответить на следующие тестовые вопросы:**
+
+# Задание 1.1.3
+
+![](image/1.JPG)
+
+# Задание 1.1.5
+
+![](image/2.JPG)
 
 
-   [missing-data]: https://pandas.pydata.org/pandas-docs/stable/user_guide/missing_data.html
-   [insertion-deletion]: https://pandas.pydata.org/pandas-docs/stable/user_guide/dsintro.html#column-selection-addition-deletion
-   [alignment]: https://pandas.pydata.org/pandas-docs/stable/user_guide/dsintro.html?highlight=alignment#intro-to-data-structures
-   [groupby]: https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html#group-by-split-apply-combine
-   [conversion]: https://pandas.pydata.org/pandas-docs/stable/user_guide/dsintro.html#dataframe
-   [slicing]: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#slicing-ranges
-   [fancy-indexing]: https://pandas.pydata.org/pandas-docs/stable/user_guide/advanced.html#advanced
-   [subsetting]: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#boolean-indexing
-   [merging]: https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html#database-style-dataframe-or-named-series-joining-merging
-   [joining]: https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html#joining-on-index
-   [reshape]: https://pandas.pydata.org/pandas-docs/stable/user_guide/reshaping.html
-   [pivot-table]: https://pandas.pydata.org/pandas-docs/stable/user_guide/reshaping.html
-   [mi]: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#hierarchical-indexing-multiindex
-   [flat-files]: https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html#csv-text-files
-   [excel]: https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html#excel-files
-   [db]: https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html#sql-queries
-   [hdfstore]: https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html#hdf5-pytables
-   [timeseries]: https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#time-series-date-functionality
+**После просмотра способов установки Linux, мне нужно было ответить на следующие тестовые вопросы:**
 
-## Where to get it
-The source code is currently hosted on GitHub at:
-https://github.com/pandas-dev/pandas
+# Задание 1.2.6
 
-Binary installers for the latest released version are available at the [Python
-Package Index (PyPI)](https://pypi.org/project/pandas) and on [Conda](https://anaconda.org/conda-forge/pandas).
+![](image/3.JPG)
 
-```sh
-# conda
-conda install -c conda-forge pandas
-```
+# Задание 1.2.8
 
-```sh
-# or PyPI
-pip install pandas
-```
+![](image/4.JPG)
 
-The list of changes to pandas between each release can be found
-[here](https://pandas.pydata.org/pandas-docs/stable/whatsnew/index.html). For full
-details, see the commit logs at https://github.com/pandas-dev/pandas.
+# Задание 1.2.10
 
-## Dependencies
-- [NumPy - Adds support for large, multi-dimensional arrays, matrices and high-level mathematical functions to operate on these arrays](https://www.numpy.org)
-- [python-dateutil - Provides powerful extensions to the standard datetime module](https://dateutil.readthedocs.io/en/stable/index.html)
-- [pytz - Brings the Olson tz database into Python which allows accurate and cross platform timezone calculations](https://github.com/stub42/pytz)
+![](image/5.JPG)
 
-See the [full installation instructions](https://pandas.pydata.org/pandas-docs/stable/install.html#dependencies) for minimum supported versions of required, recommended and optional dependencies.
+**После освоения Linux, мне нужно было ответить на следующие тестовые вопросы:**
 
-## Installation from sources
-To install pandas from source you need [Cython](https://cython.org/) in addition to the normal
-dependencies above. Cython can be installed from PyPI:
+# Задание 1.3.4
 
-```sh
-pip install cython
-```
+![](image/6.JPG)
 
-In the `pandas` directory (same one where you found this file after
-cloning the git repo), execute:
+# Задание 1.3.6
 
-```sh
-pip install .
-```
+![](image/7.JPG)
 
-or for installing in [development mode](https://pip.pypa.io/en/latest/cli/pip_install/#install-editable):
+# Задание 1.3.8
 
+![](image/8.JPG)
 
-```sh
-python -m pip install -ve . --no-build-isolation -Ceditable-verbose=true
-```
+# Задание 1.3.10
 
-See the full instructions for [installing from source](https://pandas.pydata.org/docs/dev/development/contributing_environment.html).
+![](image/9.JPG)
 
-## License
-[BSD 3](LICENSE)
+**После запуска Terminal, а также изучения нескольких базовых команд для работы в нём, мне нужно было ответить на следующие тестовые вопросы:**
 
-## Documentation
-The official documentation is hosted on [PyData.org](https://pandas.pydata.org/pandas-docs/stable/).
+# Задание 1.4.3
 
-## Background
-Work on ``pandas`` started at [AQR](https://www.aqr.com/) (a quantitative hedge fund) in 2008 and
-has been under active development since then.
+![](image/10.JPG)
 
-## Getting Help
+# Задание 1.4.5
 
-For usage questions, the best place to go to is [StackOverflow](https://stackoverflow.com/questions/tagged/pandas).
-Further, general questions and discussions can also take place on the [pydata mailing list](https://groups.google.com/forum/?fromgroups#!forum/pydata).
+![](image/11.JPG)
 
-## Discussion and Development
-Most development discussions take place on GitHub in this repo, via the [GitHub issue tracker](https://github.com/pandas-dev/pandas/issues).
+# Задание 1.4.7
 
-Further, the [pandas-dev mailing list](https://mail.python.org/mailman/listinfo/pandas-dev) can also be used for specialized discussions or design issues, and a [Slack channel](https://pandas.pydata.org/docs/dev/development/community.html?highlight=slack#community-slack) is available for quick development related questions.
+![](image/12.JPG)
 
-There are also frequent [community meetings](https://pandas.pydata.org/docs/dev/development/community.html#community-meeting) for project maintainers open to the community as well as monthly [new contributor meetings](https://pandas.pydata.org/docs/dev/development/community.html#new-contributor-meeting) to help support new contributors.
+# Задание 1.4.10
 
-Additional information on the communication channels can be found on the [contributor community](https://pandas.pydata.org/docs/development/community.html) page.
+![](image/13.JPG)
 
-## Contributing to pandas
+# Задание 1.4.12
 
-[![Open Source Helpers](https://www.codetriage.com/pandas-dev/pandas/badges/users.svg)](https://www.codetriage.com/pandas-dev/pandas)
+![](image/14.JPG)
 
-All contributions, bug reports, bug fixes, documentation improvements, enhancements, and ideas are welcome.
+**После просмотра запуска исполняемых файлов, мне нужно было ответить на следующие тестовые вопросы:**
 
-A detailed overview on how to contribute can be found in the **[contributing guide](https://pandas.pydata.org/docs/dev/development/contributing.html)**.
+# Задание 1.5.3
 
-If you are simply looking to start working with the pandas codebase, navigate to the [GitHub "issues" tab](https://github.com/pandas-dev/pandas/issues) and start looking through interesting issues. There are a number of issues listed under [Docs](https://github.com/pandas-dev/pandas/issues?labels=Docs&sort=updated&state=open) and [good first issue](https://github.com/pandas-dev/pandas/issues?labels=good+first+issue&sort=updated&state=open) where you could start out.
+![](image/15.JPG)
 
-You can also triage issues which may include reproducing bug reports, or asking for vital information such as version numbers or reproduction instructions. If you would like to start triaging issues, one easy way to get started is to [subscribe to pandas on CodeTriage](https://www.codetriage.com/pandas-dev/pandas).
+# Задание 1.5.6
 
-Or maybe through using pandas you have an idea of your own or are looking for something in the documentation and thinking ‘this can be improved’...you can do something about it!
+![](image/16.JPG)
 
-Feel free to ask questions on the [mailing list](https://groups.google.com/forum/?fromgroups#!forum/pydata) or on [Slack](https://pandas.pydata.org/docs/dev/development/community.html?highlight=slack#community-slack).
+# Задание 1.5.7
 
-As contributors and maintainers to this project, you are expected to abide by pandas' code of conduct. More information can be found at: [Contributor Code of Conduct](https://github.com/pandas-dev/.github/blob/master/CODE_OF_CONDUCT.md)
+![](image/17.JPG)
 
-<hr>
+**После просмотра ввода/вывода, мне нужно было ответить на следующие тестовые вопросы:**
 
-[Go to Top](#table-of-contents)
+# Задание 1.6.4
+
+![](image/18.JPG)
+
+# Задание 1.6.5
+
+![](image/19.JPG)
+
+# Задание 1.6.8
+
+![](image/20.JPG)
+
+**После просмотра скачивания файлов из интернета, мне нужно было ответить на следующие тестовые вопросы:**
+
+# Задание 1.7.3
+
+![](image/21.JPG)
+
+# Задание 1.7.5
+
+![](image/21.JPG)
+
+# Задание 1.7.7
+
+![](image/23.JPG)
+
+**После просмотра работы с архивами, мне нужно было ответить на следующие тестовые вопросы:**
+
+# Задание 1.8.3
+
+![](image/24.JPG)
+
+# Задание 1.8.5
+
+![](image/25.JPG)
+
+# Задание 1.8.7
+
+![](image/26.JPG)
+
+**После просмотра способов поиска файлов и слов, мне нужно было ответить на следующие тестовые вопросы:**
+
+# Задание 1.9.3
+
+![](image/27.JPG)
+
+# Задание 1.9.5
+
+![](image/28.JPG)
+
+# Задание 1.9.6
+
+![](image/29.JPG)
+
+**Я закончила выполнение первого этапа внешнего курса, приступила к второму этапу.**
+
+## Этап 2
+
+Во втором этапе внешнего курса мне нужно было: познакомиться с сервером, рассмотреть обмен файлами, рассмотреть запуск приложений, рассмотреть контроль запускаемых приложений, познакомиться с многопоточными приложениями, познакомиться с Менеджером терминалов tmux и ответить на тестовые вопросы.
+
+**После знакомства с сервером, мне нужно было ответить на следующие тестовые вопросы:**
+
+# Задание 2.1.3
+
+![](image/30.JPG)
+
+# Задание 2.1.6
+
+![](image/31.JPG)
+
+**После просмотра обмена файлами, мне нужно было ответить на следующие тестовые вопросы:**
+
+# Задание 2.2.4
+
+![](image/32.JPG)
+
+# Задание 2.2.6
+
+![](image/33.JPG)
+
+# Задание 2.2.8
+
+![](image/34.JPG)
+
+**После просмотра запуска приложений, мне нужно было ответить на следующие тестовые вопросы:**
+
+# Задание 2.3.4
+
+![](image/35.JPG)
+
+# Задание 2.3.6
+
+![](image/36.JPG)
+
+# Задание 2.3.7
+
+![](image/37.JPG)
+
+# Задание 2.3.8
+
+![](image/38.JPG)
+
+**После просмотра контроля запускаемых приложений, мне нужно было ответить на следующие тестовые вопросы:**
+
+# Задание 2.4.5
+
+![](image/39.JPG)
+
+# Задание 2.4.8
+
+![](image/40.JPG)
+
+# Задание 2.4.10
+
+![](image/41.JPG)
+
+# Задание 2.4.11
+
+![](image/42.JPG)
+
+**После знакомства с многопоточными приложениями, мне нужно было ответить на следующие тестовые вопросы:**
+
+# Задание 2.5.7
+
+![](image/43.JPG)
+
+# Задание 2.5.8
+
+![](image/44.JPG)
+
+# Задание 2.5.9
+
+![](image/45.JPG)
+
+# Задание 2.5.12
+
+![](image/46.JPG)
+
+# Задание 2.5.13
+
+![](image/47.JPG)
+
+**После знакомства с Менеджером терминалов tmux, мне нужно было ответить на следующие тестовые вопросы:**
+
+# Задание 2.6.5
+
+![](image/48.JPG)
+
+# Задание 2.6.10
+
+![](image/49.JPG)
+
+# Задание 2.6.14
+
+![](image/50.JPG)
+
+# Задание 2.6.15
+
+![](image/51.JPG)
+
+# Задание 2.6.18
+
+![](image/52.JPG)
+
+# Задание 2.6.19
+
+![](image/53.JPG)
+
+**Я закончила выполнение второго этапа внешнего курса, приступила к третьему этапу.**
+
+## Этап 3
+
+В третьем этапе внешнего курса мне нужно было: познакомиться с Текстовым редактор vim, познакомиться с основами скриптов на bash, изучить скрипты на bash: ветвления и циклы, изучить скрипты на bash: разное, изучить продвинутый поиск и редактирование, изучить построение графиков в gnuplot, изучить пункт Разное и ответить на тестовые вопросы.
+
+**После знакомства с Текстовым редактор vim, мне нужно было ответить на следующие тестовые вопросы:**
+
+# Задание 3.1.5
+
+![](image/54.JPG)
+
+# Задание 3.1.7
+
+![](image/55.JPG)
+
+# Задание 3.1.8
+
+![](image/56.JPG)
+
+# Задание 3.1.10
+
+![](image/57.JPG)
+
+# Задание 3.1.11
+
+![](image/58.JPG)
+
+**После знакомства с основами скриптов на bash, мне нужно было ответить на следующие тестовые вопросы:**
+
+# Задание 3.2.3
+
+![](image/59.JPG)
+
+# Задание 3.2.5
+
+![](image/60.JPG)
+
+# Задание 3.2.7
+
+![](image/61.JPG)
+
+# Задание 3.2.10
+
+![](image/62.JPG)
+
+**После изучения скриптов на bash: ветвления и циклы, мне нужно было ответить на следующие тестовые вопросы:**
+
+# Задание 3.3.3
+
+![](image/63.JPG)
+
+# Задание 3.3.5
+
+![](image/64.JPG)
+
+# Задание 3.3.6
+
+![](image/65.JPG)
+
+# Задание 3.3.8
+
+![](image/66.JPG)
+
+# Задание 3.3.9
+
+![](image/67.JPG)
+
+**После изучения скриптов на bash: разное, мне нужно было ответить на следующие тестовые вопросы:**
+
+# Задание 3.4.3
+
+![](image/68.JPG)
+
+# Задание 3.4.5
+
+![](image/69.JPG)
+
+# Задание 3.4.6
+
+![](image/70.JPG)
+
+# Задание 3.4.8
+
+![](image/71.JPG)
+
+# Задание 3.4.9
+
+![](image/72.JPG)
+
+# Задание 3.4.10
+
+![](image/73.JPG)
+
+**После изучения продвинутого поиска и редактирования, мне нужно было ответить на следующие тестовые вопросы:**
+
+# Задание 3.5.3
+
+![](image/74.JPG)
+
+# Задание 3.5.4
+
+![](image/75.JPG)
+
+# Задание 3.5.5
+
+![](image/76.JPG)
+
+# Задание 3.5.7
+
+![](image/77.JPG)
+
+# Задание 3.5.9
+
+![](image/78.JPG)
+
+# Задание 3.5.11
+
+![](image/79.JPG)
+
+# Задание 3.5.12
+
+![](image/80.JPG)
+
+**После изучения построения графиков в gnuplot, мне нужно было ответить на следующие тестовые вопросы:**
+
+# Задание 3.6.3
+
+![](image/81.JPG)
+
+# Задание 3.6.5
+
+![](image/82.JPG)
+
+# Задание 3.6.7
+
+![](image/83.JPG)
+
+# Задание 3.6.10
+
+![](image/84.JPG)
+
+**После изучения пункта Разное, мне нужно было ответить на следующие тестовые вопросы:**
+
+# Задание 3.7.4
+
+![](image/84.JPG)
+
+# Задание 3.7.5
+
+![](image/84.JPG)
+
+# Задание 3.7.7
+
+![](image/84.JPG)
+
+# Задание 3.7.8
+
+![](image/84.JPG)
+
+# Задание 3.7.10
+
+![](image/84.JPG)
+
+## Итог
+
+![](image/90.JPG)
+
+**Я закончила прохождение внешнего курса и получила сертификат с отличием**
+
+## Вывод
+
+Я познакомилась с операционной системой Linux и её базовыми возможностями. 
+
+## Список литературы
+
+1. http://rus-linux.net/  -- виртуальная энциклопедия ﻿Linux ﻿
+2. ﻿http://www.f-notes.info/linux:linux_command -- довольно обширный список полезных команд терминала.
+3. ﻿http://ru.najomi.org/_nix -- полезные примеры использования команд терминала
+4. ﻿http://forum.ubuntu.ru/ -- форум русскоязычного сообщества Ubuntu.
+5. http://ru.najomi.org/vim -- команды vim
+6. ﻿http://lib.ru/LINUXGUIDE/torvalds_jast_for_fun.txt -- книга создателя Linux Линуса Торвальдса "Just for fun".
+
